@@ -1,0 +1,408 @@
+/* Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Admin CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+
+main {
+    height: 100vh;
+    background: #fff;
+    display: flex;
+}
+
+/* User select none */
+.icon,
+.name-item {
+    user-select: none;
+}
+
+/* Siderbar ============== */
+.sidebar {
+    width: 16%;
+    background: #fff;
+}
+
+
+
+.sidebar_name {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 29px;
+    width: 100%;
+    color: #013cc6;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.sidebar .list-manage {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 41px;
+}
+
+.sidebar .list-manage .list-icon{
+    color: #000;
+    text-decoration: none;
+    padding-left: 41px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar .list-manage .manage-item:hover {
+    width: 100%;
+    background: #5b5b5b;
+    color: #fff;
+}
+
+.sidebar .list-manage .manage-item:hover span {
+    color: #fff;
+}
+
+.sidebar .list-manage .manage-item .name-item {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 0.32px;
+}
+
+.sidebar .list-manage .manage-item .list-icon .icon-item {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar .list-manage .manage-item .list-icon .icon-none {
+    display: block;
+}
+
+.sidebar .list-manage .manage-item .list-icon .icon-fill {
+    display: none;
+}
+
+.sidebar .list-manage .manage-item .list-icon.active .icon-none {
+    display: none;
+}
+
+.sidebar .list-manage .manage-item .list-icon.active .icon-fill {
+    display: inline-block;
+    color: #000;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    padding-left: 40px;
+    background: rgba(204, 204, 204, 0.2);
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.header .avatart {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+/*log out*/
+
+.logout {
+    margin-top: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logout:hover {
+    background: #5b5b5b;;
+}
+
+.logout .icon {
+}
+
+.logout span {
+    user-select: none;
+    line-height: 50px;
+}
+
+.logout:hover span {
+    color: #fff;
+}
+
+/* Search */
+
+.container .search {
+    display: flex;
+    height: 52px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+}
+
+.container .icon-search {
+    color: #000;
+}
+
+.container #search-value {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+.form {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.submit-search {
+    border: none;
+    outline: none;
+    line-height: 50px;
+}
+
+
+/* Table */
+.table {
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    padding: 10px;
+}
+
+th {
+    text-align: center;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+thead {
+    width: 100%;
+    height: 10%;
+}
+
+thead, th, tr, td{
+    border: 1px solid #000;
+}
+
+.number {
+    text-align: center;
+    width: 5%;
+}
+
+.userID {
+    width: 20%;
+}
+
+.fullname {
+    width: 30%;
+}
+
+.password {
+    width: 10%;
+}
+
+.roleID {
+    width: 10%;
+}
+
+.update {
+    width: 10%;
+}
+
+.delete {
+    width: 10%;
+}
+
+.addProduct {
+    margin-top: 40px;
+}
+
+add-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.add-product label {
+    font-size: 1.2rem;
+    width: 120px;
+}
+
+.add-product div {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.add-product input {
+    padding: 5px;
+}
+
+.add-product button {
+    width: 100px;
+    line-height: 25px;
+}
